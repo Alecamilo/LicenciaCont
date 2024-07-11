@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="finanzas, finanaciera, personales">
+    <meta name="author" content="Alejandro Camilo y Laura Fernanda ">
+    <meta name="description" content="Es la aplicación que podrán orden en tus finanzas personales de forma automática e inteligente. Registra tus ingresos y gastos para tener una visión clara de tu situación financiera en tiempo real. La app analiza tus hábitos de consumo y te ayuda a crear un presupuesto personalizado, identificando oportunidades de ahorro.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0310a7c42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="img/LogoLicenica.png">
+    <title>Licencia</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div>
+        </div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#myBtn">Login</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <header class="showcase">
+        <video id="background-video" src="/img/arqu.mp4" autoPlay muted loop></video>
+        <div class="container showcase-inner">
+          <img id="ilos" src="img/LogoLicenica.png"  alt="">
+          <h2>Bienvenido a Licencia de constuccion virtuales</h2>
+          <p>El sistema de licencias de construcción virtuales está diseñado para facilitar la gestión de licencias de construcción, digitalizando el proceso y mejorando su eficiencia. Para asegurar la correcta verificación de los artefactos asociados a las solicitudes, es esencial contar con instrumentos de verificación que permitan revisar de manera exhaustiva y sistemática los documentos y modelos presentados. Este documento presenta los instrumentos de verificación diseñados para tal fin, incluyendo listas de chequeo y formularios, garantizando que todos los aspectos críticos sean evaluados de manera clara y concisa.</p>
+          
+
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn">Acceder</button>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content"> 
+
+            <span class="close">&times;</span>
+            <h1>Administrador servicios del licencias de construcción</h1>
+            <div class="container" id="container">
+              <div id="myBtn" class="form-container sign-up-container">
+                <form action="back/registro.php" method="POST">
+                  <img class="shul" src="img/Resji.jpg">
+                  <span>or use your email for registration</span>
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputnombres">Nombres</label>
+                        <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Nombres">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputapellidos">Apellidos</label>
+                        <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Apellidos">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputcorreo">Correo</label>
+                        <input type="email" class="form-control" name="email" id="inputcorreo" placeholder="Email" >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputNumero_de_iden">Número de identificación</label>
+                        <input type="text" class="form-control" name="id_person" id="inputNumero_de_iden">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Contraseña</label>
+                        <input type="password" class="form-control"name="pass" id="inputPassword4" placeholder="Password" >
+                      </div>
+                    </div>
+                    <button name="register_btn" type="submit">Register</button>
+                  </form>
+              </div>
+              <div class="form-container sign-in-container">
+                <form action="back/login.php" method="POST">
+                  <img class="shul" src="img/Contus.jpg">
+                  <span>or use your account</span>
+                  <label for="inputcorreo">Correo</label>
+                  <input type="email" class="form-control"  name="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label for="inputPassword4">Contraseña</label>
+                  <input type="password" class="form-control"  name="pass" id="exampleInputPassword1" placeholder="Password">
+                  <a href="#">¿Olvidaste tu contraseña?</a>
+                  <button name="login_btn" class="btn_login">iniciar sesión</button>
+                </form>
+              </div>
+              <div class="overlay-container">
+                <div class="overlay">
+                  <div class="overlay-panel overlay-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    <button class="ghost" id="signIn">iniciar sesión</button>
+                  </div>
+                  <div class="overlay-panel overlay-right">
+                    <h1>Nuevo registro de administrador </h1>
+                    <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
+                    <button class="ghost" id="signUp">inscribirse</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <section  class="structure_one">
+        <div class="info_section">
+            <div class="title">
+                <h3>OBJETIVOS</h3>
+            </div>
+            <ol style="line-height:180%" >
+              <li>Asegurar la completitud de las solicitudes: Verificar que todos los documentos y datos necesarios han sido proporcionados.</li>
+              <li>Garantizar la calidad de los planos y modelos BIM: Evaluar la exactitud y conformidad de los planos y modelos 3D con las normas establecidas.</li>
+              <li>Cumplir con las normativas y regulaciones: Asegurar que todos los proyectos cumplen con las regulaciones locales y estándares de construcción.</li>
+              <li>Optimizar el proceso de revisión: Facilitar un proceso de revisión más eficiente y sistemático mediante el uso de instrumentos de verificación estandarizados.</li>
+            <ol>
+        </div>
+        <div class="illustration_section">
+          <img src="img/Solicdotas.jpg">
+        </div>
+      </section>
+      <section class="structure_one">
+        <div class="illustration_section">
+          <img src="img/Avazndo.jpg">
+        </div>
+        <div class="info_section">
+          <div class="title">
+            <h3>JUSTIFICACIÓN</h3>
+          </div>
+          <p>
+          La digitalización del proceso de solicitud y gestión de licencias de construcción presenta múltiples ventajas, como la reducción de errores humanos, la aceleración del proceso de aprobación y una mayor transparencia. Sin embargo, para que estos beneficios se materialicen, es crucial contar con herramientas que aseguren una verificación rigurosa y sistemática de los artefactos presentados. Los instrumentos de verificación diseñados en este documento cumplen con esta función, permitiendo una revisión exhaustiva y coherente, lo cual es esencial para mantener la calidad y conformidad de los proyectos de construcción.
+          </p>
+        </div>
+      </section>
+      <section  class="structure_one">
+        <div class="info_section">
+            <div class="title">
+                <h3>ANTECEDENTES</h3>
+            </div>
+            <p>
+            Tradicionalmente, el proceso de solicitud y verificación de licencias de construcción ha sido manual y propenso a errores. La documentación en papel y la falta de estandarización en los procedimientos han llevado a retrasos y a la ineficiencia en la gestión de las licencias. Con la introducción de sistemas de licencias de construcción virtuales, se ha dado un paso significativo hacia la modernización de este proceso. Sin embargo, la implementación exitosa de estos sistemas requiere el desarrollo de instrumentos de verificación que aseguren que todos los artefactos se revisen adecuadamente y que se cumplan todas las normativas.
+            </p>
+        </div>
+        <div class="illustration_section">
+          <img src="img/Justic.jpg">
+        </div>
+      </section>
+      <section class="structure_one">
+        <div class="illustration_section">
+          <img src="img/casita.jpg">
+        </div>
+        <div class="info_section">
+          <div class="title">
+            <h3>Ámbito del sistema</h3>
+          </div>
+          <p>
+          El sistema de licencias de construcción virtuales abarca todo el proceso desde la presentación de la solicitud hasta la emisión de la licencia. Los instrumentos de verificación diseñados están destinados a ser utilizados en las siguientes fases:
+          </p>
+          <ol style="line-height:180%" >
+              <li>Presentación de la solicitud: Verificación de la completitud y conformidad de los documentos presentados.</li>
+              <li>Revisión de planos y modelos BIM: Evaluación de la calidad y exactitud de los planos arquitectónicos y estructurales, así como de los modelos BIM.</li>
+              <li>Cumplimiento normativo: Aseguramiento de que todos los aspectos del proyecto cumplen con las regulaciones y normativas locales.</li>
+            <ol>
+        </div>
+      </section>
+      <section  class="structure_one">
+        <div class="info_section">
+            <div class="title">
+                <h3>Suposiciones</h3>
+            </div>
+            <p>
+              Suposiciones
+            </p>
+            <ol style="line-height:180%" >
+              <li>Integración con sistemas de autenticación: El sistema depende de la correcta integración con sistemas de autenticación (LDAP/OAuth) para la verificación de identidad de los usuarios.</li>
+              <li>Conectividad y acceso a internet: El sistema depende de una conectividad a internet estable y fiable para su operación.</li>
+              <li>Actualización de normativas y regulaciones: El sistema debe estar actualizado con las últimas normativas y regulaciones locales para asegurar el cumplimiento.</li>
+            <ol>
+        </div>
+        <div class="illustration_section">
+          <img src="img/correct.jpg">
+        </div>
+      </section>
+      <section class="structure_one">
+        <div class="illustration_section">
+          <img src="img/Casia.jpg">
+        </div>
+        <div class="info_section">
+          <div class="title">
+            <h3>Dependencias</h3> 
+          </div>
+          <p>
+            Dependencias
+          </p>
+          <ol style="line-height:180%" >
+              <li>Integración con sistemas de autenticación: El sistema depende de la correcta integración con sistemas de autenticación (LDAP/OAuth) para la verificación de identidad de los usuarios.</li>
+              <li>Conectividad y acceso a internet: El sistema depende de una conectividad a internet estable y fiable para su operación.</li>
+              <li>Actualización de normativas y regulaciones: El sistema debe estar actualizado con las últimas normativas y regulaciones locales para asegurar el cumplimiento.</li>
+            <ol>
+        </div>
+      </section>
+      <footer class="Contact">
+        <div class="logo">
+          <img src="img/LogoLicenica.png">
+        </div>
+        <div class="contain-main-footer">
+          <div class="contact">
+            <h4>Isablea Salud</h4>
+            <address>
+              Isablea Salud
+              <ul>
+                <li>
+                  <i class="fa-solid fa-arrow-right">Linea de atención EPS Bogotá y Cundinamarca: 22991293</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Linea de atención Covid y Viruela Simica: 9299199</i>
+                </li>
+                <li> 
+                  <i class="fa-solid fa-angles-right">Linea de atención Plan Complementario y Plan Vital: 929291</i>
+                </li>
+                <li> 
+                  <i class="fa-solid fa-angles-right">Linea Nacional: 8282103</i>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="regulatory">
+            <h4>Conoce más</h4>
+            <ul>
+                <li>
+                  <i class="fa-solid fa-angles-right"> Isabela Salud</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Centro permanencia Fusagasugá</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Proveedores</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Preguntas frecuentes</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Revista Compensar</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Trabaja con nosotros</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Te escuchamos PQRS</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Nuestra organización</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Mapa del sitio</i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right">Servicios y atención</i>
+                </li>
+              </ul>
+          </div>
+          <div class="location">
+            <h4>Ubicación</h4>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.164823900567!2d-74.0370906241406!3d4.741403741301509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1698189405987!5m2!1ses!2sco"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="social-media">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="copy_right">
+          <span>© Copyright 2024 | Sitio creado y administrado por la Alejandro Camilo y Laura Fernanda.</span>
+        </div>
+      </footer>
+
+
+      <script src="srcipt.js"></script>
+
+</body>
+</html>
